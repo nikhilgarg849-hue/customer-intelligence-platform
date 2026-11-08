@@ -20,15 +20,16 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data files
+# Ignore raw data by default
 data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+!data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
-# Model artifacts
+# Ignore model artifacts by default
 models/*
-!models/.gitkeep
+!models/logistic_regression.joblib
+!models/random_forest.joblib
+!models/model_comparison.csv
+!models/shap_feature_importance.csv
 
 # Logs
 logs/
@@ -42,3 +43,38 @@ logs/
 .vscode/*
 !.vscode/extensions.json
 
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Streamlit
+.streamlit/secrets.toml
