@@ -14,7 +14,7 @@ st.subheader("AI-Powered Customer Churn Prediction")
 
 st.write("Enter customer information to predict churn risk.")
 
-API_URL = "http://127.0.0.1:8000/prediction/churn"
+API_URL = "https://customer-intelligence-api-dgxl.onrender.com/prediction/churn"
 
 # =====================================
 # EXECUTIVE CUSTOMER INTELLIGENCE DASHBOARD
